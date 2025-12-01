@@ -6,6 +6,10 @@
 
 A fully responsive personal portfolio website built with semantic **HTML5** and modern **CSS3**. This project serves as a digital resume to showcase my skills as a MERN Stack Developer, display my recent projects, and provide a contact interface.
 
+GitHub: @muhammadshoaib20
+Portfolio: [muhammadshoaib20.github.io/Portfolio-Website](https://muhammadshoaib20.github.io/Portfolio-Website/)
+Email: msofficial.cs@gmail.com
+
 ## 🌟 Features
 
 * **Responsive Design:** Fully adaptable layout that looks great on Desktops, Tablets, and Mobile phones (using CSS Media Queries).
