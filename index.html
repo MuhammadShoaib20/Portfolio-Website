@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My PortFolio</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="todoapp.html">
+    <link rel="stylesheet" href="weather.html">
+    <link rel="stylesheet" href="ecommerce.html">
 
 </head>
 <body>
+<div id="toast"></div>
+  <!--Navigation Bar-->
     <nav>
   <div class="container">
     <div class="logo">My PortFolio</div>
-    <ul>
+    <div id="menu-btn" class="menu-btn">☰</div>
+    <ul id="navmenu">
      <li><a href="#home">Home</a></li>
      <li><a href="#about">About</a></li>
      <li><a href="#skills">Skill</a></li>
@@ -22,7 +28,7 @@
     </nav>
   <!---Hero Section--> 
   <section id="home" class="hero">
-    <h1>Hi, I'm Muhammad Shoaib</h1>
+    <h1>Hi, I'm <span id="typed-text">Muhammad Shoaib</span></h1>
     <p>MERN Stack Developer | Building Amazing Web Application </p>
     <a href="#contact" class="btn">Get In Touch </a>
   </section> 
@@ -36,7 +42,11 @@
     </div>
 
     <div class="about-text">
-      <p>Hello! I'm a passionate MERN Stack Developer with expertise in building modern web applications. I love creating user-friendly interfaces and robust backend systems.</p>
+    <p id="about-short">Hello! <span class="highlight">I'm a passionate MERN Stack Developer</span> with expertise in building modern web applications. 
+<span id="dots">...</span>
+<span id="more" style="display:none;">I love creating user-friendly interfaces and robust backend systems. I’m currently learning the MERN stack and working on exciting projects.</span></p>
+<button id="readMoreBtn">Read More</button>
+
       <p>I'm currently learning the MERN stack and working on exciting projects. My goal is to become a full-stack developer who can build complete web solutions.</p>
       <p>When I'm not coding, I enjoy learning new technologies and contributing to open-source projects.</p>
     </div>
@@ -46,49 +56,83 @@
 <section id="skills">
   <h2>My Skills</h2>
   <div class="skill-grid">
-    <div class="skill-card">
+    <div class="skill-card" data-type="frontend">
+    <div class="skill-card" data-type="frontend" title="HTML5,CSS3,JavaScript,React.js">
       <h3>Frontend</h3>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percentage="90%"></div>
+      </div>
+          <div class="counter" data-target="90">0%</div>
+
       <p>HTML5, CSS3, JavaScript, React.js, Responsive Design</p>
     </div>
-    <div class="skill-card">
+    <div class="skill-card" data-type="backend">
+    <div class="skill-card" data-type="backend" title="Node.js, Express.js, REST APIs, Authentication">
       <h3>Backend</h3>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percentage="85%"></div>
+      </div>
+     <div class="counter" data-target="85">0%</div>
       <p>Node.js, Express.js, REST APIs, Authentication</p>
     </div>
-    <div class="skill-card">
+    <div class="skill-card" data-type="database">
+        <div class="skill-card" data-type="database" title="MongoDB, Mongoose, Database Design">
       <h3>Database</h3>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percentage="85%"></div>
+      </div>
+           <div class="counter" data-target="85">0%</div>
+
       <p>MongoDB, Mongoose, Database Design</p>
     </div>
-    <div class="skill-card">
+     <div class="skill-card" data-type="tools">
+    <div class="skill-card" data-type="tools" title="Git, GitHub, VS Code, Postman, npm">
       <h3>Tools</h3>
+      </div>
+       <div class="skill-bar">
+        <div class="skill-fill" data-percentage="100%"></div>
+      </div>
+           <div class="counter" data-target="100">0%</div>
+
     <p>Git, GitHub, VS Code, Postman, npm</p>
   </div>
   </div>
+  <div class="skill-filters">
+  <button data-filter="all">All</button>
+  <button data-filter="frontend">Frontend</button>
+  <button data-filter="backend">Backend</button>
+  <button data-filter="database">Database</button>
+  <button data-filter="tools">Tools</button>
+</div>
+
 </section>
 <!--Project Section -->
 <section id="project">
   <h2>My Project</h2>
-  <div class="projects-grid">
-    <div class="project-card">
+  <div class="projects-grid" >
+    <div class="project-card" >
       <div class="project-img"><img src="" alt="">📝
       </div>
         <div class="project-content">
+        
           <h3>Todo Application</h3>
-          <p>A full-stack todo app with CRUD operations, built using MERN stack.
+          <p>A full-stack todo app with CRUD operations, built using MERN stack.</p>
+          <p><strong>Tech:</strong> React, Node.js, MongoDB, Express</p>
+          <button onclick="location.href='todoapp.html'" id="todo">View</button>
 
-</p>
-          <p><strong>Tech:</strong> React, Node.js, MongoDB
-
-</p>
         </div>
       </div>
       <div class="project-card">
       <div class="project-img"><img src="" alt="">🌤️
-
       </div>
         <div class="project-content">
           <h3>Weather App</h3>
           <p>Real-time weather application using external API integration.</p>
           <p><strong>Tech:</strong>JavaScript, API, CSS</p>
+          <button onclick="location.href='weatherapp.html'" id="todo">View</button>
         </div>
       </div>
       <div class="project-card">
@@ -98,6 +142,7 @@
           <h3>E-Commerce Site</h3>
           <p>Complete e-commerce platform with cart and payment integration.</p>
           <p><strong>Tech:</strong>MERN Stack, Stripe</p>
+          <button onclick="location.href='ecommerce.html'" id="todo">View</button>
         </div>
       </div>
     </div>
@@ -116,12 +161,15 @@
       <textarea name="message" id="message" rows="5" required></textarea>
     </div>
     <button type="submit">Send Message </button>
+    <button type="button" id="clearBtn">Clear Form</button>
+
   </form>
 </section>
 <!--Footer-->
 <footer>
-  <p>© 2024 MyPortfolio. All Rights Reserved.</p>
-  <p>Built with ❤️ using HTML & CSS</p>
+  <p>© 2025 MyPortfolio. All Rights Reserved.</p>
+  <p>Built with ❤️ using HTML | CSS & JS</p>
 </footer>
+<script src="script.js"></script>    
 </body>
 </html>
