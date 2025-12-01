@@ -1,219 +1,144 @@
-# 🌟 Personal Portfolio Website
+# Personal Portfolio Website
 
 A modern, responsive portfolio website built with HTML5 and CSS3 to showcase my skills and projects as a MERN Stack Developer.
 
+**Live Demo:** [View Live](https://muhammadshoaib20.github.io/Portfolio-Website/)
 
-## 🚀 Live Demo
+---
 
-**View Live:** [https://muhammadshoaib20.github.io/Portfolio-Website/](https://muhammadshoaib20.github.io/Portfolio-Website/)
+## Table of Contents
 
-##  Table of Contents
+* [About](#about)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Sections](#sections)
+* [Installation](#installation)
+* [Screenshots](#screenshots)
+* [Learning Outcomes](#learning-outcomes)
+* [Future Enhancements](#future-enhancements)
+* [Project Structure](#project-structure)
+* [Contributing](#contributing)
+* [Contact](#contact)
+* [License](#license)
 
-- [About](#about)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Sections](#sections)
-- [Installation](#installation)
-- [Screenshots](#screenshots)
-- [Learning Outcomes](#learning-outcomes)
-- [Future Enhancements](#future-enhancements)
-- [Contact](#contact)
+---
 
-##  About
+## About
 
-This is my **Day 1 project** of the 30-Day MERN Stack Learning Journey. The portfolio website demonstrates my understanding of HTML5 semantic elements, CSS3 modern layouts (Flexbox & Grid), and responsive design principles.
+This is my Day 1 project of the 30-Day MERN Stack Learning Journey. The portfolio website demonstrates HTML5 semantic elements, CSS3 modern layouts (Flexbox & Grid), and responsive design principles.
 
-##  Features
+---
 
--  **Fully Responsive** - Works perfectly on desktop, tablet, and mobile devices
--  **Modern Design** - Clean and professional UI with gradient backgrounds
--  **Smooth Animations** - Fade-in effects and hover transitions
--  **Semantic HTML5** - Proper use of semantic tags for better SEO
--  **CSS Grid & Flexbox** - Modern layout techniques
--  **Sticky Navigation** - Fixed navbar that stays on scroll
--  **Interactive Elements** - Hover effects on cards and buttons
--  **Contact Form** - Functional contact form (frontend validation)
+## Features
 
-##  Technologies Used
+* Fully responsive for desktop, tablet, and mobile devices
+* Modern clean design
+* Smooth animations and hover effects
+* Semantic HTML5 for SEO
+* CSS Grid and Flexbox layout techniques
+* Sticky navigation
+* Interactive elements and functional contact form (frontend validation)
 
-- **HTML5** - Semantic markup
-- **CSS3** - Styling and animations
-  - Flexbox for navigation and layout alignment
-  - CSS Grid for skills and projects sections
-  - Media queries for responsive design
-  - CSS transitions and transforms
-  - Linear gradients
+---
 
-##  Sections
+## Technologies Used
 
-### 1. **Navigation Bar**
-- Sticky header with smooth scroll links
-- Responsive menu
-- Brand logo
+* HTML5
+* CSS3 (Flexbox, Grid, media queries, transitions, gradients)
 
-### 2. **Hero Section**
-- Eye-catching introduction
-- Call-to-action button
-- Gradient background
+---
 
-### 3. **About Me**
-- Professional introduction
-- Profile picture (circular)
-- Description of skills and goals
+## Sections
 
-### 4. **Skills**
-- 4 skill cards showcasing:
-  - Frontend Development
-  - Backend Development
-  - Database Management
-  - Development Tools
-- Hover effects on cards
+1. Navigation Bar – Sticky header, smooth scroll, responsive menu
+2. Hero Section – Introduction and call-to-action button
+3. About Me – Profile image and description
+4. Skills – 4 skill cards showcasing frontend, backend, database, and tools
+5. Projects – Project showcase with technology stack
+6. Contact – Form with name, email, message, and validation
+7. Footer – Copyright and optional social links
 
-### 5. **Projects**
-- Project showcase cards
-- Technology stack mentioned
-- Descriptions of projects
+---
 
-### 6. **Contact**
-- Contact form with:
-  - Name field
-  - Email field
-  - Message textarea
-  - Submit button
-- Form validation
+## Installation
 
-### 7. **Footer**
-- Copyright information
-- Social media links (optional)
+1. Clone the repository:
 
-## 💻 Installation
-
-Follow these steps to run the project locally:
-
-### 1. Clone the Repository
 ```bash
 git clone https://github.com/muhammadshoaib20/Portfolio-Website.git
 ```
 
-### 2. Navigate to Project Directory
+2. Navigate to project directory:
+
 ```bash
 cd Portfolio-Website
 ```
 
-### 3. Open in Browser
-Simply open the `index.html` file in your browser:
-- Double-click `index.html`, or
-- Right-click → Open with → Browser
+3. Open `index.html` in your browser or use Live Server in VS Code.
 
-**Alternative:** Use Live Server in VS Code
-```bash
-# Install Live Server extension in VS Code
-# Right-click on index.html → Open with Live Server
-```
+---
 
-## 📸 Screenshots
+## Screenshots
 
-### Desktop View
-![Desktop View](DesktopView.jpeg)
+**Desktop View**
+![Desktop View](./images/desktop-view.png)
 
-### Mobile View
-![Mobile View](MobileView.jpeg)
+**Mobile View**
+![Mobile View](./images/mobile-view.png)
 
+---
 
-##  Learning Outcomes
+## Learning Outcomes
 
-Through this project, I learned:
+* Semantic HTML5 elements and accessible forms
+* CSS Flexbox and Grid for layouts
+* Responsive design with media queries
+* CSS animations and gradients
+* Git & GitHub workflow and GitHub Pages deployment
 
-1. **HTML5 Semantic Elements**
-   - Proper use of `<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`
-   - Form elements and attributes
-   - Accessibility best practices
+---
 
-2. **CSS3 Advanced Concepts**
-   - Flexbox for one-dimensional layouts
-   - CSS Grid for two-dimensional layouts
-   - Responsive design with media queries
-   - CSS animations and transitions
-   - Linear gradients and modern effects
+## Future Enhancements
 
-3. **Responsive Design**
-   - Mobile-first approach
-   - Breakpoints for different screen sizes
-   - Flexible layouts
+* Dark mode toggle
+* JavaScript form submission
+* Project filtering functionality
+* Downloadable resume
+* Smooth scroll animations
+* Backend integration for contact form
+* Testimonials and blog section
+* Loading animations and effects
 
-4. **Git & GitHub**
-   - Version control basics
-   - Repository creation
-   - Committing and pushing code
-   - GitHub Pages deployment
+---
 
-## 🔮 Future Enhancements
-
-- [ ] Add dark mode toggle
-- [ ] Implement JavaScript for form submission
-- [ ] Add project filter functionality
-- [ ] Include downloadable resume
-- [ ] Add smooth scroll animations
-- [ ] Integrate with backend API for contact form
-- [ ] Add testimonials section
-- [ ] Include blog section
-- [ ] Add loading animations
-- [ ] Implement AOS (Animate On Scroll) library
-
-## 🎯 Day 1 Checklist
-
-- [x] HTML5 fundamentals learned
-- [x] CSS3 Flexbox & Grid practiced
-- [x] Portfolio website created
-- [x] Responsive design implemented
-- [x] Uploaded to GitHub
-- [x] Deployed on GitHub Pages
-- [x] README.md file added
-
-## 📂 Project Structure
+## Project Structure
 
 ```
 Portfolio-Website/
 │
 ├── index.html          # Main HTML file
+├── style.css           # CSS file
 ├── README.md           # Project documentation
-└─  profile.jpg         # Image 
-    
+└── images/             # Image assets
+    └── profile.jpg
 ```
 
-## 🤝 Contributing
+---
 
-This is a personal learning project, but suggestions are welcome!
+## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Fork the repository, create a branch, commit your changes, push to your branch, and open a pull request.
 
-## 📧 Contact
+---
 
-**Muhammad Shoaib**
+## Contact
 
-- GitHub: [@muhammadshoaib20](https://github.com/muhammadshoaib20)
-- Portfolio: [muhammadshoaib20.github.io/Portfolio-Website](https://muhammadshoaib20.github.io/Portfolio-Website/)
-- Email: msofficial.cs@gmail.com 
+* GitHub: [@muhammadshoaib20](https://github.com/muhammadshoaib20)
+* Portfolio: [muhammadshoaib20.github.io/Portfolio-Website](https://muhammadshoaib20.github.io/Portfolio-Website/)
+* Email: [msofficial.cs@gmail.com](mailto:msofficial.cs@gmail.com)
 
-##  License
+---
+
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-- Inspiration from modern portfolio designs
-- 30-Day MERN Stack Study Plan
-- Web development community
-
----
-
-**⭐ If you found this project helpful, please give it a star!**
-
----
-
-
-
